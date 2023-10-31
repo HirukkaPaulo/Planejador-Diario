@@ -1,0 +1,175 @@
+//Importação da fonte "Raleway"
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.title{
+    padding: 220px 0px 50px 0px;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.content{
+    background-color: #2D2D2D;
+    color: white;
+    font-size: 30px;
+    font-family: Raleway;
+    font-weight: 600;
+    display: flex;
+    padding-top: 75px;
+
+    p{
+        margin-right: 200px;
+    }
+}
+
+.whitebar{
+    background-color: white;
+    width: 685px;
+    height: 7px;
+    margin-top: 40px;
+}
+
+.tasklist{
+    background-color: #2D2D2D;
+    font-family: Raleway;
+    color: white;
+    padding-bottom: 100%;
+    padding-right: auto;
+    padding-left: 400px;
+    font-size: 25px;
+    font-weight: 400;
+   
+    
+    p{
+        margin-bottom: 15px;
+    }
+
+    img{
+        width: 35px;
+        height: 30px;
+       }
+    
+    button{
+        margin-left: 410px;
+        background-color: #2D2D2D;
+        color: white;
+        border: none;
+        font-size: 35px;
+        cursor: pointer;
+    }
+}
+
+.taskAdd{
+    display: flex;
+    padding-top: 25px;
+}
+
+.inputTask{
+    background-color: #2D2D2D;
+    font-family: Raleway;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    height: 40px;
+    width: 230px;
+    padding-left: 10px;
+}
+
+.inputTask::placeholder{
+    font-size: 20px;
+}
+
+.inputCheckBox{
+    width: 40px;
+    height: 40px;
+    margin-left: 310px;
+    margin-right: 260px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.imagens{
+    padding-left: 580px;
+    display: flex;
+    position: absolute;
+    
+    img{  
+        padding-left: 15px;
+        cursor: pointer;
+    }
+}
+
+.editCard{
+    background-color: #2D2D2D;
+    text-align: center;
+    font-family: Raleway;
+    padding-bottom: 150px;
+    
+    
+    h1{
+        margin-bottom: 55px;
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    p{
+        margin-bottom: 85px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+}
+
+.container{
+    width: 760px;
+    height: 435px;
+    background-color: white; 
+    padding-top: 70px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+
+    h1{
+        margin-bottom: 55px;
+        font-size: 35px;
+    }
+
+    p{
+        margin-bottom: 30px;
+    }
+    button{
+        width: 270px;
+        height: 75px;
+        border-radius: 10px;
+        font-size: 30px;
+        font-weight: 600;
+        border: 1px solid black;
+        cursor: pointer;
+        font-family: Raleway;
+        margin: 0;
+    }
+
+    .blueButton{
+        background-color: #0C70F2;
+        margin-right: 15px;
+        color: white;
+    }
+
+}
+.editInputs{
+    display: flex;
+    flex-direction: column;
+}
+.editInput{
+    background-color: white;
+    font-family: Raleway;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    height: 40px;
+    width: 400px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
