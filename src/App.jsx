@@ -1,4 +1,4 @@
-import './app.css'
+import './app.scss'
 
 import Navbar from './Components/Navbar/Navbar'
 import TaskList from './Components/TaskList/TaskList'
