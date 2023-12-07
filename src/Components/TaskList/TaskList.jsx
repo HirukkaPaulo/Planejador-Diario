@@ -73,6 +73,7 @@ export default function TaskList({data}){
       data1.push(novaTask);
       document.getElementById('inputTask').value = '';
       setX(x + 1);
+      alert('Você pode adicionar uma descrição a essa nova tarefa clicando no botão de lápis.')
       }
     }
   
