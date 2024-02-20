@@ -10,7 +10,7 @@ Caso deseje utilizar este projeto em seu computador, repita os seguintes passos:
 
     - Utilizando o terminal, digite a seguinte instrução: git clone https://github.com/HirukkaPaulo/Planejador-Diario.git
 
-    - Pronto, o projeto já estara no seu computador.
+    - Pronto, o projeto já estará copiado no seu computador.
 
 2. Instale as dependências necessárias: 
 

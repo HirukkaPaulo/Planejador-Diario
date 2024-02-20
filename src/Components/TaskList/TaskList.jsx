@@ -78,10 +78,11 @@ export default function TaskList({data}){
     }
   
   class task {
-    constructor(id,title,description){
+    constructor(id,title,description,time){
       this.id = id;
       this.title = title;
       this.description = description;
+      this.time = time
     }
   }
 
@@ -95,6 +96,7 @@ export default function TaskList({data}){
                   <div className='content'>
                     <p>Tarefa</p>
                     <p>Status</p>
+                    <p>Tempo</p>
                     <p>Opções</p>
                   </div>
                   <div className='whitebar'>
@@ -103,10 +105,11 @@ export default function TaskList({data}){
                   <div key={index} className='taskAdd'>
                     <p>{itens.title}</p>
                     <input className='inputCheckBox' type='checkbox'></input>
+                    <p className='time'>{itens.time}</p>
                     <div className='imagens'>
                         <img onClick={() => {
                         editCard(index);
-                      }} 
+                        }} 
                         src="Pencil.svg" alt="" />
                         <img onClick={() => {
                         deleteCard(index);
