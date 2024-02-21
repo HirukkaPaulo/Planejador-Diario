@@ -49,10 +49,11 @@ export default function TaskList({data}){
     function editCardYes(){
       let newTask = document.getElementById('newTaskTitle').value;
       let newDescription = document.getElementById('newTaskDescription').value;
+      let newTime = document.getElementById('newTaksTime').value;
       
       if(newTask != ''){
-        let editedTask = new task(selectedTaskId + 1, newTask, newDescription );
-
+        let editedTask = new task(selectedTaskId + 1, newTask, newDescription, newTime );
+        console.log(editedTask)
         data1.splice(selectedTaskId, 1, editedTask);     
         setX(x + 1);
         setExibirDiv(true);
@@ -71,9 +72,9 @@ export default function TaskList({data}){
       } else {
       let novaTask = new task(data1.length + 1, valorInput);
       data1.push(novaTask);
-      document.getElementById('inputTask').value = '';
       setX(x + 1);
-      alert('Você pode adicionar uma descrição a essa nova tarefa clicando no botão de lápis.')
+      alert('Você pode adicionar uma descrição e um tempo necessário para a realização dessa nova tarefa clicando no botão de lápis.');
+      valorInput = '';
       }
     }
   
@@ -129,6 +130,7 @@ export default function TaskList({data}){
                     <div className='editInputs'>
                       <input placeholder='Digite o novo título da tarefa' id="newTaskTitle" className='editInput' type='text' />
                       <input placeholder='Digite a nova descrição da tarefa' id="newTaskDescription" className='editInput' type='text' />
+                      <input placeholder='Digite o tempo necessário para a realização da tarefa' id="newTaksTime" className='editInput' type='text' />
                     </div>
                     <div className='buttons'>
                       <button onClick={() => {editCardNo()}} className='blueButton'>Não</button>
